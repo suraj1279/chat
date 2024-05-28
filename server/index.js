@@ -28,7 +28,7 @@ const server = app.listen(3000, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://chat-alpha-virid.vercel.app",
+    origin: '*',
     credentials: true,
   },
 });
